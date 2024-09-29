@@ -29,6 +29,9 @@ gem 'capistrano-passenger', '~> 0.2.0'
 gem 'capistrano-asdf'
 gem 'dotenv-rails', groups: [:development, :test, :production]
 
+gem 'ed25519', '~> 1.2'
+gem 'bcrypt_pbkdf', '~> 1.0'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
