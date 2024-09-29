@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: writedaily_production
-  username: writedaily
+  database: writedaily
+  username: deploy
   password: <%= ENV["WRITEDAILY_DATABASE_PASSWORD"] %>
