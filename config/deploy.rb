@@ -1,8 +1,10 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.19.1"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "writedaily"
+set :repo_url, "git@github.com:harryjmg/writedaily.git"
+
+set :branch, 'main'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -37,9 +39,6 @@ set :repo_url, "git@example.com:me/my_repo.git"
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
-
-set :application, "writedaily"
-set :repo_url, "git@github.com:harryjmg/writedaily.git"
 
 # Deploy to the user's home directory
 set :deploy_to, "/home/deploy/#{fetch :application}"
